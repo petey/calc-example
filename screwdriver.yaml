@@ -1,0 +1,12 @@
+workflow:
+    - main-without-template
+
+jobs:
+    main:
+        template: node/test@stable
+
+    main-without-template:
+        image: node:6
+        steps:
+            - install: npm install
+            - test: npm test
