@@ -3,7 +3,7 @@ workflow:
 
 jobs:
     main:
-        template: node/test@stable
+        template: node/test@1-stable
 
     main-without-template:
         image: node:6
